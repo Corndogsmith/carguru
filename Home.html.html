@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Cars</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css"
+</head>
+<!--fonts for all wording-->
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+
+<body>
+
+ <div class= "parallaxh">
+ 
+<h2>Keenan<br>Smith</h2>
+
+<!--Drop down menu items and links-->
+ 
+ <div class = "TH"> 
+  <div class="dropdownh">
+   <button class="dropbtnh">Menu</button>
+  <div class="dropdown-contenth">
+   <a href="Home.html.html">Home</a>
+	</br>
+    <a href="speed.html">Speed</a>
+	</br>
+    <a href="top 5.html">Top 5</a>
+	</br>
+    <a href="Evolve.html">Evolve</a>
+	</br>
+		<a href="sport.html">Sport</a>
+	
+	 
+  </div>
+<!--text box divisions-->
+
+ </div>
+</div>
+
+<div class="w3-content w3-display-container">
+
+
+
+<div class="w3-display-container mySlides">
+  <img src="images/pic12.jpg" style="width:50%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-5 w3-black">
+    Acura NSX
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/pic13.jpg" style="width:50%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-5 w3-black">
+    Kit cars
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</div>
+</body>
+
+</html>
